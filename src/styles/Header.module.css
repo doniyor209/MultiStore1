@@ -1,0 +1,139 @@
+  .header {
+    background: #111;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo a {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .nav a {
+    margin-left: 16px;
+    color: #ddd;
+  }
+
+  .gradient_text {
+    background: linear-gradient(90deg,
+        #ff6a87,
+        #ffa63d,
+        #ffea3d,
+        #8ef441,
+        #3ce0b3,
+        #5aa9ff,
+        #b18aff);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  font-size: 50px;
+    animation: gradientMove 5s linear infinite;
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .logoutBtn {
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff6b6b, #f7971e, #42e695, #4776e6);
+    background-size: 300% 300%;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: gradientMove 6s ease infinite;
+    margin-left: 10px;
+  }
+
+  .logoutBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .logoutBtn:active {
+    transform: scale(0.95);
+  }
+
+  .navLink {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #ff6b6b, #f7971e, #42e695, #4776e6);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease infinite;
+    transition: transform 0.3s ease;
+  }
+
+  .navLink:hover {
+    transform: scale(1.05);
+  }
+
+
+
+  .userGreeting {
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .userGreeting span {
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff6b6b, #f7971e, #42e695, #4776e6);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease infinite;
+  }
+
+
+  .greetingWord {
+    font-weight: 600;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #ff6b6b, #f7971e, #42e695, #4776e6);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: greetingColor 4s ease infinite;
+  }
+
+  @keyframes greetingColor {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
